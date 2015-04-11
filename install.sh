@@ -5,6 +5,10 @@ command curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
 \curl -sSL https://get.rvm.io | bash -s stable --ruby --with-gems="bundler"
 source ~/.rvm/scripts/rvm
 bundle install
+echo "\nGithub-pages installed!\n"
+echo "Press Enter to initialize webpage\n"
+echo "Ctrl-c to stop.\n"
+read nostop
 echo "Enter your GitHub username:"
 read username
 jekyll new $username.GitHub.io
