@@ -28,7 +28,7 @@ if curl https://api.github.com/repos/$username/$username.GitHub.io | grep -q '"n
 else
     cd $path
     jekyll new $username.GitHub.io
-    $username.GitHub.io
+    cd $username.GitHub.io
     git init
     git add .
     git commit -m 'Initial commit'
